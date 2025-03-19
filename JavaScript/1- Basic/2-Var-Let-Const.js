@@ -66,3 +66,8 @@ let number1 = 10;
     console.log("Inside block " + number1); // 20
 }
 console.log("outside block " + number1); // 10
+
+
+// 1- Var variable value is by default undefined in memory
+// 2- Let variable value is not defined in memory
+// 3- Const variable value is not defined in memory
