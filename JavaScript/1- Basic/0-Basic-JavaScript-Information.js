@@ -2,6 +2,11 @@
 // Passed by Value in JavaScript means that a copy of the actual parameter’s value is made in memory  i.e., a new memory allocation is done.
 // So if you change the value of the copied variable, it will not affect the original variable.
 
+// Characteristics
+
+// Memory =>  Stored in the Stack.
+// Passing => Passed by Value (a copy is created).
+// Immutability (generally) => Changes to a copy or original do not affect each other.
 
 // 1. Number
 // 2. String
@@ -61,7 +66,7 @@ console.log(num); // 30
 console.log(result); // 1500
 
 
-// Non-Primitive Data Types
+// Non-Primitive Data Types use Heap Memory
 // They are Passed by Reference (shared) it means that the reference is stored in the memory same location.
 // So if you change the value of the copied variable, it will affect the original variable.
 
