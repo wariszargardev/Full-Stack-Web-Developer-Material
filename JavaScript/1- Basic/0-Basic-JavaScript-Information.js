@@ -1,6 +1,7 @@
-// Primitive Data Types
+// Primitive Data Types use Stack Memory
 // Passed by Value in JavaScript means that a copy of the actual parameter’s value is made in memory  i.e., a new memory allocation is done.
 // So if you change the value of the copied variable, it will not affect the original variable.
+
 
 // 1. Number
 // 2. String
@@ -9,6 +10,30 @@
 // 5. Null
 // 6. Symbol
 // 7. BigInt
+
+// Function Call Context:
+// The stack also keeps track of function calls, including local variables and the execution context
+
+
+function firstFunction() {
+    let localVar1 = "Hello";
+    secondFunction();
+    console.log(localVar1);
+  }
+  
+  function secondFunction() {
+    let localVar2 = "World";
+    console.log(localVar2);
+  }
+  
+  firstFunction();
+
+
+// firstFunction is called: its call context is pushed onto the stack.
+// secondFunction is called from within firstFunction: its call context is pushed onto the stack.
+// secondFunction finishes: its call context is popped off the stack.
+// firstFunction continues: its call context is still on the stack.
+// firstFunction finishes: its call context is popped off the stack
 
 // Example 1
 
