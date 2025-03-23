@@ -1,0 +1,7 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "Learning JavaScript ES6 modules",
+  "type": "module",
+  "main": "9-learn-what-es6-modules-are-and-how-to-export-and-import-them.js"
+} 
