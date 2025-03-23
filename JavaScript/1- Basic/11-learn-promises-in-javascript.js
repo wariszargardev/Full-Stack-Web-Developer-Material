@@ -48,5 +48,5 @@ const simplePromise = new Promise((res, rej) => {
     }
 })
 
-simpleMessage.then(res => console.log("Simple success Message"))
+simplePromise.then(res => console.log("Simple success Message"))
 .catch(err => console.log("Error message"))
