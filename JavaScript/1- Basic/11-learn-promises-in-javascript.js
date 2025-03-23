@@ -40,3 +40,13 @@ promise.then((result) => {
 // });
 
 
+const simplePromise = new Promise((res, rej) => {
+    if (true) {
+        resolve ("Promise resolved")
+    } else {
+        reject ("Promise rejected")
+    }
+})
+
+simpleMessage.then(res => console.log("Simple success Message"))
+.catch(err => console.log("Error message"))
