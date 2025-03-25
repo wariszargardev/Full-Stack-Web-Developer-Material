@@ -32,3 +32,19 @@ console.log(totalScores)
 
 const anotherWayOfReduce = members.reduce((acc, value) => acc + value.score, 0)
 console.log(anotherWayOfReduce)
+
+
+const memberCompanies = [
+    {name: 'Elon Musk', companies: ['Tesla', 'SpaceX', 'Neuralink']},
+    {name: 'Jeff Bezos', companies: ['Amazon', 'Blue Origin']},
+    {name: 'Bill Gates', companies: ['Microsoft', 'Tesla']},
+]
+
+const companies = memberCompanies.reduce((acc, value) => {
+    return acc.concat(value.companies)
+}, []);
+
+console.log(companies)
+
+
+
