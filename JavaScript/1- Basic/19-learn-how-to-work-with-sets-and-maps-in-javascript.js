@@ -114,4 +114,20 @@ const simpleObject = {
 simpleObject['number'] = 1234567890
 console.table(simpleObject)
 
+// set is a collection of unique values
+const countries = ['india','pakistan','afghanistan','nepal','bhutan', 'india', 'pakistan'];
+const memberCountries = new Set(countries);
+console.log(memberCountries, typeof memberCountries)
+const backToArray = Array.from(memberCountries);
+console.log(backToArray, typeof backToArray)
+
+const uniqueCountries = [...new Set(countries)];
+console.log(uniqueCountries, typeof uniqueCountries)
+
+
+
+
+
+
+
 
