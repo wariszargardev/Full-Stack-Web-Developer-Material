@@ -126,8 +126,34 @@ console.log(uniqueCountries, typeof uniqueCountries)
 
 
 
+const vipMembers = [
+	{
+		name: 'kamal',
+		age: 20,
+		country: 'pakistan'
+	},
+	{
+		name: 'waris',
+		age: 20,
+		country: 'pakistan'
+
+	},
+	{
+		name: 'zargar',
+		age: 20,
+		country: 'canada'
+
+	},
+	{
+		name: 'zargar',
+		age: 20,
+		country: 'usa'
+	},
+]
 
 
+const contriesName= vipMembers.map (member => member.country)
 
+const uniqueCountries1 = [... new Set(contriesName)];
 
-
+console.log(`Unique country name ${uniqueCountries1.length}`)
