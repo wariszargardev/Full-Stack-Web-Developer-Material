@@ -93,3 +93,25 @@ console.table(player)
 player.clear()
 console.table(player)
 
+
+// Map & Object
+// Maps are iterables and objects are not
+const simpleMap = new Map([
+	['name', 'kamal'],
+	['age', 20],
+	['city', 'delhi'],
+	['country', 'india']
+])
+simpleMap.set('number', 1234567890)
+console.table(simpleMap)
+
+const simpleObject = {
+	name: 'kamal',
+	age: 20,
+	city: 'delhi',
+	country: 'india'
+}
+simpleObject['number'] = 1234567890
+console.table(simpleObject)
+
+
