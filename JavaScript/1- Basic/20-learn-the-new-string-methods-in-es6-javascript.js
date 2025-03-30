@@ -86,6 +86,7 @@ const str7 = "Hello World"
 const substr1 = str7.substr(0, 5) // 0 is the start index and 5 is the number of characters to extract
 console.log(substr1)
 
-
+const substr2 = str7.substr(5) // 5 is the start index and it will return the rest of the string
+console.log(substr2)
 
 
