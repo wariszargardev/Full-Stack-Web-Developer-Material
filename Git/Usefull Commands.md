@@ -33,7 +33,8 @@
 | `git revert <commit-hash>` | Revert a commit |
 | `git rebase <branch>` | Rebase current branch onto another |
 | `git fetch origin` | Fetch latest changes without merging |
-| `git cherry-pick <commit-hash>` | Apply a specific commit to current branch |
+| `git cherry-pick <commit-hash>` | Apply a specific commit to current branch It will create new commit |
+| `git cherry-pick <commit-hash> -n` | Apply a specific commit to current branch It will not create a new commit|
 | `git tag <tag-name>` | Create a new tag |
 | `git show <tag-name>` | Show tag details |
 | `git blame <file>` | Show commit history for each line in a file |
