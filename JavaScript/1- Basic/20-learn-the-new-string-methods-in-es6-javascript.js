@@ -1,3 +1,5 @@
+// padding works on string not number
+
 const str = "Hello World ";
 console.log(str.repeat(3))
 
