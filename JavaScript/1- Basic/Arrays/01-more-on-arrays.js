@@ -77,3 +77,26 @@ const spliceArray = newArray.splice(1,3)
 console.log (`Splice array ${sliceArray}`)
 
 console.log (`C- original array after splice ${newArray}`)
+
+
+const inconsistantArray = [1,2,3,4,5,6,[7,8,], [12,343, [234,665]], 9,10]
+const flatArray = inconsistantArray.flat(2)
+const newFlatArray = inconsistantArray.flat(Infinity)
+
+console.log(`Flat array ${flatArray}`)
+console.log(`New flat array ${newFlatArray}`)
+
+console.log(`is array ${Array.isArray("Waris")}`)
+console.log(`is array ${Array.isArray([1,2,3,4,5])}`)
+
+// String to array
+const string = "Waris Ali Ahsan Faisal Mushtaq"
+const stringArray1 = string.split(" ")
+console.log(`String array ${stringArray1}`)
+console.log(`String to array  ${Array.from(string)}`)
+
+const score1 = 100
+const score2 = 200
+const score3 = 300
+
+console.log(`Array from ${Array.of(score1, score2, score3)}`)
