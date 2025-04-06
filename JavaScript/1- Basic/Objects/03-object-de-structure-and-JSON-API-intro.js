@@ -41,3 +41,9 @@ console.log(name);
 //     {},
 //     {},
 // ]
+
+
+Object.entries(user).forEach(user => {
+    const [key, value] = user
+    console.log(`Key ${key} value ${value}`)
+})
