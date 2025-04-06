@@ -70,3 +70,5 @@ Object.entries(data).forEach(user => {
     const [key, value] = user;
     console.log(key, value);
 })
+
+console.log(data.hasOwnProperty("name"));
