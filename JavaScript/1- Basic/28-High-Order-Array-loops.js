@@ -54,7 +54,7 @@ const users = [
     {name: "Ahmad", age: 25, salary: 3000, email:"ahmad@gmail.com"},
 ]
 
-
+    
 const printUserInfo = (user) => {
     console.log(`Name ${user.name} Age ${user.age} Salary ${user.salary}`)
 }
@@ -66,3 +66,7 @@ users.forEach (printUserInfo)
 users.forEach((user, index, arr) => {
     console.log(`Name ${user.name} Age ${user.age} Salary ${user.salary} Index ${index} Array ${arr}`)
 })
+
+
+// Foreach will not return anything even if we return something
+
