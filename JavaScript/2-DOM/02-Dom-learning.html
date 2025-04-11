@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <h1 id="heading" class="main-heading">I am h1 tag</h1>
+        </div>
+    </div>
+    <ul id="list">
+        <li class="item-list">Item 1</li>
+        <li class="item-list">Item 2</li>
+        <li class="item-list">Item 3</li>
+        <li class="item-list">Item 4</li>
+        <li class="item-list">Item 5</li>
+    </ul>
+</body>
+
+<script>
+    const idOfSelectedElement = document.getElementById("heading").id
+    const classOfSelectedElement = document.getElementById("heading").className
+    const innerHTMLOfSelectedElement = document.getElementById("heading").innerHTML
+    const innerTextOfSelectedElement = document.getElementById("heading").innerText
+    const getAttributes = document.getElementById("heading").getAttribute("id")
+
+    console.log(`id of selected element is ${idOfSelectedElement}`)
+    console.log(`class of selected element is ${classOfSelectedElement}`)
+    console.log(`innerHTML of selected element is ${innerHTMLOfSelectedElement}`)
+    console.log(`innerText of selected element is ${innerTextOfSelectedElement}`)
+    console.log(`getAttributes of selected element is ${getAttributes}`)
+
+    // When we set the attribute to the element, we use the setAttribute method 
+    // It will override the existing attribute
+    document.getElementById("heading").setAttribute("id", "heading-new")
+    document.getElementById("parent").setAttribute("class", "main-heading-new")
+    document.getElementById("parent").setAttribute("style", "color: red;")
+    document.getElementById("parent").setAttribute("title", "This is a title")
+    document.getElementById("parent").setAttribute("data-id", "123")
+
+
+    // innerText will give all the text inside the element whihc is visible
+    // textContent will give all the text inside the element including the hidden text
+    // innerHTML will give all the HTML inside the element
+    
+
+    // querySelector is used to select the first element that matches the selector
+    // querySelectorAll is used to select all the elements that match the selector
+
+    document.querySelector("#parent").innerHTML = "<h1>I am a new heading</h1>"
+    const element = document.querySelector("#parent")
+    const classElemeent = document.querySelector('.item-list')
+
+
+// 1.innerHTML: returns all html nodes 
+// 2.textContent : returns all text content
+// 3.innerText : gives the text in the selected node
+// 4.querySelector
+// 5.querySelectorAll
+// 6.getAttribute
+// 7.setAttribute
+</script>
+</html>

@@ -1,3 +1,5 @@
+// https://medium.com/@sanjeevanibhandari3/your-map-is-slower-than-you-think-heres-how-to-speed-it-up-7773c25076b3
+
 // ES6   introdcued new methods for arrays
 
 // forEach
